@@ -17,25 +17,14 @@ int xxx = 20;
 
 int main() {
     
-    int a,b;
-    a = 20;
-    a = 33;
-    b = 30;
-    std::cout << a << b << std::endl;
-    
-    
-    string greeting = "hello, runoob";
-        cout << greeting;
-        cout << "\n";     // 换行符
-        string greeting2 = "hello, \
-runoob";
-        cout << greeting2 << endl;
-    
-    
-    cout << xxx << endl;
-    
-    return 0;
-    
+   int  var[3] = {10, 100, 200};
+ 
+   for (int i = 0; i < 3; i++)
+   {
+      *var = i;    // 这是正确的语法
+      var++;       // 这是不正确的
+   }
+   return 0;
 }
 
 
